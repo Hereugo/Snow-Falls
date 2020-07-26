@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SnowFall</title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script src="index.js"></script>
+	<script>
+		setInterval(function(){
+			ctx.beginPath()
+			ctx.fillStyle = "black"
+			ctx.rect(0 , 0 , W , H)
+			ctx.fill()
+			for (let i=0; i<snow.length; i++) {
+				if (snow[i].pos.y > H) snow[i] = new SnowFlake()
+				snow[i].Update()
+				snow[i].Draw()
+				}
+		},25)
+	</script>
+</body>
+</html>
