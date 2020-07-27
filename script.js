@@ -1,6 +1,6 @@
-document.documentElement.requestFullscreen();
-var H = 1000
-var W = 1800
+// document.documentElement.requestFullscreen();
+var H = 500;
+var W = 700;
 var canvas = document.getElementById("canvas")
 	canvas.height = H
 	canvas.width = W
